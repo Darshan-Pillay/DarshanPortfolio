@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_app_root"
+    app:startDestination="@id/about_me">
+
+    <fragment
+        android:id="@+id/about_me"
+        android:name="co.za.darshanpillay.darshanportfolio.destination.aboutme.FragmentAboutMe"
+        android:label="FragmentAboutMe" >
+        <action
+            android:id="@+id/action_fragmentAboutMe_to_fragmentInfo"
+            app:destination="@id/info" />
+    </fragment>
+    <fragment
+        android:id="@+id/info"
+        android:name="co.za.darshanpillay.darshanportfolio.destination.info.FragmentInfo"
+        android:label="FragmentInfo" >
+        <action
+            android:id="@+id/action_fragmentInfo_to_fragmentProject"
+            app:destination="@id/project" />
+    </fragment>
+    <fragment
+        android:id="@+id/project"
+        android:name="co.za.darshanpillay.darshanportfolio.destination.project.FragmentProject"
+        android:label="FragmentProject" />
+</navigation>

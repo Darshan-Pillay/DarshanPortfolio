@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/about_me"
+        android:title="@string/aboout_me_title"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_emoji_people"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@id/info"
+        android:title="@string/info_title"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@id/project"
+        android:title="@string/project_title"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_work"
+        app:showAsAction="ifRoom" />
+
+</menu>
